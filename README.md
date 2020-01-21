@@ -3,23 +3,23 @@
 
 ## Introduction
 
-In this lab, you'll practice some of the introductory skills for NetworkX introduced in the previous lesson.
-To do this, you'll create a graph to visualize users and businesses from yelp reviews.
+In this lab, you'll practice some of the introductory skills for creating graphs using the NetworkX library introduced in the previous lesson. To do this, you'll create a graph to visualize users and businesses from yelp reviews. 
+
 ## Objectives
 
-You will be able to:
-* Create basic network graphs using NetworkX
-* Add nodes to network graphs with NetworkX
-* Add edges to network graphs with NetworkX
-* Visualize network graphs with NetworkX
+In this lab you will: 
+
+- Create basic network graphs with networkx 
+- Add nodes and edges to networkx graphs 
+- Visualize network graphs with networkx 
 
 ## Import the Data
 
-To start, import the data stored in the file 'Yelp_reviews.csv'
+To start, import the data stored in the file `'Yelp_reviews.csv'`. 
 
 
 ```python
-#Your code here
+# Your code here
 ```
 
 ## Creating a Graph
@@ -28,10 +28,10 @@ Now, create an initial graph!
 
 
 ```python
-#Your code here
+# Your code here
 ```
 
-## Adding Nodes
+## Adding Nodes 
 
 Create a node for each user and each business in the dataset. Networks with multiple node types like this are called **bimodal networks**.
 
@@ -39,7 +39,7 @@ Optionally, go further by creating a list of colors for when you visualize the g
 
 
 ```python
-#Your code here
+# Your code here
 ```
 
 ## Adding Edges
@@ -48,7 +48,7 @@ Next, iterate through the dataset and create an edge between users and the busin
 
 
 ```python
-#Your code here
+# Your code here
 ```
 
 ## Visualizing the Graph
@@ -57,7 +57,7 @@ Finally, create a visualization of your network. If you chose to color your node
 
 
 ```python
-#Your code here
+# Your code here
 ```
 
 ## Summary
