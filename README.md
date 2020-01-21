@@ -3,23 +3,23 @@
 
 ## Introduction
 
-In this lab, you'll practice some of the introductory skills for NetworkX introduced in the previous lesson.
-To do this, you'll create a graph to visualize users and businesses from yelp reviews.
+In this lab, you'll practice some of the introductory skills for creating graphs using the NetworkX library introduced in the previous lesson. To do this, you'll create a graph to visualize users and businesses from yelp reviews. 
+
 ## Objectives
 
-You will be able to:
-* Create basic network graphs using NetworkX
-* Add nodes to network graphs with NetworkX
-* Add edges to network graphs with NetworkX
-* Visualize network graphs with NetworkX
+In this lab you will: 
+
+- Create basic network graphs with networkx 
+- Add nodes and edges to networkx graphs 
+- Visualize network graphs with networkx 
 
 ## Import the Data
 
-To start, import the data stored in the file 'Yelp_reviews.csv'
+To start, import the data stored in the file `'Yelp_reviews.csv'`. 
 
 
 ```python
-#Your code here
+# Your code here
 ```
 
 
@@ -141,18 +141,17 @@ Now, create an initial graph!
 
 
 ```python
-#Your code here
+# Your code here
 ```
 
 
 ```python
 # __SOLUTION__ 
-#Your code here
 import networkx as nx
 G = nx.Graph()
 ```
 
-## Adding Nodes
+## Adding Nodes 
 
 Create a node for each user and each business in the dataset. Networks with multiple node types like this are called **bimodal networks**.
 
@@ -160,7 +159,7 @@ Optionally, go further by creating a list of colors for when you visualize the g
 
 
 ```python
-#Your code here
+# Your code here
 ```
 
 
@@ -169,16 +168,15 @@ Optionally, go further by creating a list of colors for when you visualize the g
 names = {}
 node_color = []
 for n, person in enumerate(df.user_id.unique()):
-    name = "User{}".format(n)
+    name = 'User{}'.format(n)
     names[person] = name
     G.add_node(name)
-    node_color.append("green")
+    node_color.append('green')
 for n, biz in enumerate(df.business_id.unique()):
-    name = "Business{}".format(n)
+    name = 'Business{}'.format(n)
     names[biz] = name
     G.add_node(name)
-    node_color.append("blue")
-    
+    node_color.append('blue')  
 ```
 
 ## Adding Edges
@@ -187,7 +185,7 @@ Next, iterate through the dataset and create an edge between users and the busin
 
 
 ```python
-#Your code here
+# Your code here
 ```
 
 
@@ -207,18 +205,18 @@ Finally, create a visualization of your network. If you chose to color your node
 
 
 ```python
-#Your code here
+# Your code here
 ```
 
 
 ```python
 # __SOLUTION__ 
 %matplotlib inline
-nx.draw(G, with_labels=True, alpha=.7, font_size=6, node_size=500, node_color=node_color)
+nx.draw(G, with_labels=True, alpha=0.7, font_size=6, node_size=500, node_color=node_color)
 ```
 
 
-![png](index_files/index_16_0.png)
+![png](index_files/index_14_0.png)
 
 
 ## Summary
